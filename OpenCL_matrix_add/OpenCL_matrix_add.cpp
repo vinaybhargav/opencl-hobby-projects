@@ -71,6 +71,5 @@ int main()
 
         g<<"\n";
     }
-                                                                                 // wait for user input to exit.
 
 }
