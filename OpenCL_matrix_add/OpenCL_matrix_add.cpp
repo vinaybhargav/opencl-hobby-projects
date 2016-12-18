@@ -8,8 +8,9 @@ ofstream g("data.out");
 
 int main()
 {
-    size_t global_size[2], local_size[2]; // Arguments dimension setters. global_size for kernel and local_size for host
-    int found, mat_width, mat_height;
+    size_t global_size[2], local_size[2]; // Arguments dimension setters. global_size represents the total number of threads we need.
+                                            // local_size represents how many threads to spawn each time.
+    int found, mat_width, mat_height;       
     sclHard hardware;
     sclSoft software;
 
